@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <div
           className={`bg-[url("https://driverevel.com/images/files/home-hero/imagen-hero-home-MOB_2x.webp")] h-full w-full z-0 absolute top-0 right-0 left-0  bg-no-repeat bg-cover bg-center`}
         />
-        <section className=" max-w-7xl mx-auto w-full flex flex-col items-center space-y-4 h-full z-10 absolute top-10">
+        <section className=" max-w-7xl mx-auto w-full flex flex-col items-center justify-center left-0 right-0 space-y-4 h-full z-10 absolute top-10">
           <h1 className="text-white text-[28px] font-semibold">
             El nuevo renting para particulares
           </h1>
