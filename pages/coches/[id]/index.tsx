@@ -13,7 +13,7 @@ export const getServerSideProps = (async (
 ) => {
   console.log(context);
   const { id } = context.params!;
-  const res = await fetch(`http://localhost:3000/api/cars/${id}`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/cars/${id}`);
   const car: CarSchema = await res.json();
   if (!car) {
     return { notFound: true };

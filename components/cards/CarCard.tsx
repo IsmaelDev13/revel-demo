@@ -48,7 +48,7 @@ const CarCard = ({ car }: Props) => {
         <div>
           <div className="flex items-end">
             <p className="text-blueSale font-semibold">{car.currentPrice}€</p>
-            <p className="text-[12px]">/mes</p>
+            <p className="text-[12px] mb-[1px]">/mes</p>
           </div>
           {car.currentPrice !== car.lastPrice && (
             <div className="flex items-center space-x-1">

@@ -11,7 +11,7 @@ const Header = () => {
   };
   return (
     <header className="relative flex items-center w-full h-[48px] justify-between px-[32px] z-20 bg-white text-gray-800">
-      <div className="block">
+      <div className="block w-1/5 ">
         <button
           className="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700"
           onClick={toggleMenu}
@@ -32,10 +32,12 @@ const Header = () => {
           </svg>
         </button>
       </div>
-      <Link href="/" className="font-bold text-lg">
-        REVEL Demo
-      </Link>
-      <div className="flex items-center ">
+      <div>
+        <Link href="/" className="font-bold text-lg text-center">
+          REVEL Demo
+        </Link>
+      </div>
+      <div className="flex items-center w-1/5 ">
         <div className="hover:bg-[#eee] cursor-pointer h-[48px] flex items-center px-[16px]">
           <PiPhone className="h-6 w-6 text-gray-500 hover:text-gray-700 transition-colors" />
         </div>

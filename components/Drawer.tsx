@@ -44,7 +44,7 @@ const Drawer = ({ open, setOpen }: Props) => {
   const router = useRouter();
   const getCars = async () => {
     const response = await fetch(
-      `http://localhost:3000/api/cars?make=${selectedMakeType}&fuelType=${selectedFuelType}&permanency=${selectedPermanency}&gearType=${selectedGearType}&carType=${selectedCarType}`
+      `${process.env.NEXT_PUBLIC_API_URL}/api/cars?make=${selectedMakeType}&fuelType=${selectedFuelType}&permanency=${selectedPermanency}&gearType=${selectedGearType}&carType=${selectedCarType}`
     )
       .then((res) => res.json())
       .then((data) => {

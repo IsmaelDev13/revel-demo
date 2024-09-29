@@ -53,7 +53,9 @@ export const getServerSideProps = (async ({ query }) => {
     }
   }
 
-  const apiUrl = `http://localhost:3000/api/cars?${params.toString()}`;
+  const apiUrl = `${
+    process.env.NEXT_PUBLIC_API_URL
+  }/api/cars?${params.toString()}`;
   const res = await fetch(apiUrl);
   // const res = await fetch(`http://localhost:3000/api/cars?price=${sort}`);
   const cars: CarSchema[] = await res.json();
