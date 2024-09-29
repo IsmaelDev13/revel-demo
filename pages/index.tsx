@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         />
         <section className=" max-w-7xl mx-auto w-full flex flex-col items-center justify-center left-0 right-0 space-y-4 h-full z-10 absolute top-10">
           <div className="flex flex-col items-center">
-            <h1 className="text-white text-[28px] font-semibold text-center ">
+            <h1 className="text-white text-[28px] font-semibold text-center mb-[10px]">
               El nuevo renting para particulares
             </h1>
             <p className="text-[16px] text-white">Contratalo 100% online.</p>
