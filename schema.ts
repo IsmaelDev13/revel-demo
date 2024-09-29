@@ -1,0 +1,21 @@
+export type CarSchema = {
+  id: number;
+  make: string;
+  model: string;
+  minEstDelivery: number;
+  maxEstDelivery: number;
+  fuelType: string;
+  carType: string;
+  gearType: string;
+  currentPrice: number;
+  lastPrice: number;
+  isOffer: boolean;
+  carImage: string;
+  isNew: boolean;
+  permanency: string;
+  kilometraje: number;
+  color: string;
+  type: string;
+  horsePower: number;
+  year: number;
+};
